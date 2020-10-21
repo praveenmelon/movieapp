@@ -1,0 +1,17 @@
+{
+  "favouriteMovies": "Favourite Movies",
+  "language": "Language",
+  "feedback": "Feedback",
+  "about": "About",
+  "popular": "POPULAR",
+  "now": "NOW",
+  "soon": "SOON",
+  "okay": "Okay",
+  "retry": "Retry",
+  "somethingWentWrong": "Something went wrong..",
+  "noMovies": "Sorry,No movies under this section.",
+  "checkNetwork": "Please check your network connection and press Retry button or put in as a bug by Pressing Feedback.",
+  "aboutDescription": "This product uses the TMDB API but is not endorsed or certified by TMDB. This app is developed for education purpose."
+
+
+}
