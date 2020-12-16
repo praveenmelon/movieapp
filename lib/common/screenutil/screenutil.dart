@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-class ScreenUtil {
+class   ScreenUtil {
   static ScreenUtil _instance;
   static const int defaultWidth = 414;
   static const int defaultHeight = 896;

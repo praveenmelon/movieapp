@@ -9,7 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:movieapp/main.dart';
-import 'file:///C:/Users/Melon/FlutterApps/movieapp/lib/presentation/movie_app.dart';
+import '../lib/presentation/movie_app.dart';
+
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

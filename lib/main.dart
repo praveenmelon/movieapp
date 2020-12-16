@@ -10,9 +10,10 @@ import 'package:movieapp/domain/entities/movie_entity.dart';
 import 'package:movieapp/domain/entities/no_params.dart';
 import 'package:movieapp/domain/repositories/movie_repositories.dart';
 import 'package:movieapp/domain/usecases/get_trending.dart';
-import 'file:///C:/Users/Melon/FlutterApps/movieapp/lib/presentation/movie_app.dart';
+
 import 'package:pedantic/pedantic.dart';
 import 'di/get_it.dart' as getIt;
+import 'presentation/movie_app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     movieCarouselBloc = getItInstance<MovieCarouselBloc>();
     movieBackdropBloc = movieCarouselBloc.movieBackdropBloc;
+
     movieTabbedBloc = getItInstance<MovieTabbedBloc>();
     movieCarouselBloc.add(CarouselLoadEvent());
   }
