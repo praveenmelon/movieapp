@@ -6,5 +6,6 @@ class MovieTabbedConstants {
     const Tab(index: 0, title: TranslationConstants.popular),
     const Tab(index: 1, title: TranslationConstants.now),
     const Tab(index: 2, title: TranslationConstants.soon),
+    const Tab(index: 3, title: TranslationConstants.popular),
   ];
 }

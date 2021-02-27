@@ -1,5 +1,5 @@
 {
-  "favouriteMovies": "Peliculas favoritas",
+  "favoriteMovies": "Peliculas favoritas",
   "language": "Idioma",
   "feedback": "Acerca de",
   "about": "Retroalimentación",
@@ -11,5 +11,9 @@
   "somethingWentWrong": "Algo salió mal..",
   "noMovies": "Lo sentimos, no hay películas en esta sección.",
   "checkNetwork": "Verifique su conexión de red y presione el botón Reintentar o ingrese como error presionando Comentarios.",
+  "cast": "Emitir",
+  "watchTrailers": "Ver trailers",
+  "noMoviesSearched": "No se encontraron películas, busque con otra palabra",
+  "noFavoriteMovie": "Sin película favorita",
   "aboutDescription": "Este producto utiliza la API de TMDB pero no está respaldado ni certificado por TMDB. Esta aplicación está desarrollada con fines educativos."
 }

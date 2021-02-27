@@ -1,24 +1,20 @@
-import 'package:dartz/dartz.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:http/http.dart';
-import 'package:movieapp/data/core/api_client.dart';
-import 'package:movieapp/data/data_sources/movie_remote_data_source.dart';
-import 'package:movieapp/data/repositories/movie_repository_impl.dart';
-import 'package:movieapp/domain/entities/app_error.dart';
-import 'package:movieapp/domain/entities/movie_entity.dart';
-import 'package:movieapp/domain/entities/no_params.dart';
-import 'package:movieapp/domain/repositories/movie_repositories.dart';
-import 'package:movieapp/domain/usecases/get_trending.dart';
-
+import 'package:hive/hive.dart';
+import 'package:movieapp/data/tables/movie_table.dart';
 import 'package:pedantic/pedantic.dart';
+
 import 'di/get_it.dart' as getIt;
+import 'package:path_provider/path_provider.dart' as path_provider;
 import 'presentation/movie_app.dart';
 
-void main() {
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   unawaited(
       SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]));
+  final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
+  Hive.init(appDocumentDir.path);
+  Hive.registerAdapter(MovieTableAdapter());
   unawaited(getIt.init());
   runApp(MovieApp());
 }
